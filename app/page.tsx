@@ -234,9 +234,9 @@ export default function Home() {
           </div>
 
           {/* Hero visual / mockup */}
-          <div className="relative mt-6 w-full max-w-md self-stretch md:mt-0 md:self-center">
-            <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-sky-500/30 blur-3xl" />
-            <div className="absolute -bottom-10 -left-8 h-32 w-40 rounded-full bg-indigo-500/20 blur-3xl" />
+          <div className="relative z-0 mt-6 w-full max-w-md self-stretch md:mt-0 md:self-center">
+            <div className="absolute z-0 -right-8 -top-8 h-32 w-32 rounded-full bg-sky-500/30 blur-3xl" />
+            <div className="absolute z-0 -bottom-10 -left-8 h-32 w-40 rounded-full bg-indigo-500/20 blur-3xl" />
 
             <div className="relative rounded-3xl border border-slate-800/80 bg-slate-900/80 p-4 shadow-2xl shadow-black/60 backdrop-blur">
               <div className="mb-3 flex items-center justify-between text-xs text-slate-400">
@@ -435,7 +435,7 @@ export default function Home() {
               <ul className="space-y-2 text-xs text-slate-300">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-400" />
-                  <span>US-registered entity (Wyoming)</span>
+                  <span>US-registered entity</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-400" />
@@ -493,7 +493,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="space-y-8">
+        <section id="contact" className="relative z-[9999] space-y-8">
           <div className="space-y-3">
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl text-slate-100">
               Ready to build?
