@@ -111,12 +111,25 @@ export default function Home() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Yahan tum later real backend / email integration laga sakte ho.
-    alert("Thank you! We'll get back to you within 24 hours.");
-    setForm({ name: "", company: "", email: "", budget: "", message: "" });
+
+    const res = await fetch("/api/send-brief", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      alert("Your project brief has been sent successfully!");
+      setForm({ name: "", company: "", email: "", budget: "", message: "" });
+    } else {
+      alert("Failed to send. Please try again.");
+    }
   };
+
 
   return (
     <main className="min-h-screen">
@@ -583,21 +596,13 @@ export default function Home() {
                 />
               </div>
 
-              <a
-                href={`mailto:developer@nubexs.com?subject=New Project Brief from ${encodeURIComponent(
-                  form.name
-                )}&body=${encodeURIComponent(
-                  `Name: ${form.name}
-              Company: ${form.company}
-              Email: ${form.email}
-              Budget: ${form.budget}
-              Message: ${form.message}`
-                )}`}
+              <button
+                type="submit"
                 className="inline-flex items-center gap-2 rounded-full bg-sky-500 px-5 py-2.5 text-xs font-semibold text-slate-950 shadow-lg shadow-sky-500/40 hover:bg-sky-400"
               >
                 Send project brief
                 <ArrowRight className="h-3 w-3" />
-              </a>
+              </button>
 
               <p className="mt-2 text-[11px] text-slate-400">
                 Prefer email? Reach us at{" "}
