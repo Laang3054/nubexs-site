@@ -136,7 +136,7 @@ export default function Home() {
       <div className="mx-auto flex max-w-6xl flex-col gap-20 px-4 pb-16 pt-6 sm:px-6 lg:px-8 lg:pt-10">
         {/* Navbar */}
         <header className="sticky top-0 z-20 border-b border-slate-800/60 bg-slate-950/70 backdrop-blur">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 via-indigo-500 to-emerald-400 shadow-lg shadow-sky-500/40">
                 <span className="text-lg font-bold tracking-tight text-slate-950">
@@ -439,10 +439,6 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-400" />
-                  <span>Core team based in Pakistan & remote partners</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-400" />
                   <span>
                     Experience with real-time logistics & ride-hailing systems
                   </span>
@@ -688,8 +684,12 @@ export default function Home() {
           <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
             <p>© {new Date().getFullYear()} Nubexs USA LLC. All rights reserved.</p>
             <div className="flex gap-3">
-              <span className="hover:text-sky-400">Terms (coming soon)</span>
-              <span className="hover:text-sky-400">Privacy (coming soon)</span>
+              <a href="/terms-and-conditions" className="hover:text-teal-400">
+                Terms & Conditions
+              </a>
+              <a href="/privacy-policy" className="hover:text-teal-400">
+                Privacy Policy
+              </a>
             </div>
           </div>
         </footer>
