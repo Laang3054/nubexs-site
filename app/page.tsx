@@ -138,10 +138,12 @@ export default function Home() {
         <header className="sticky top-0 z-20 border-b border-slate-800/60 bg-slate-950/70 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 via-indigo-500 to-emerald-400 shadow-lg shadow-sky-500/40">
-                <span className="text-lg font-bold tracking-tight text-slate-950">
-                  N
-                </span>
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-sky-500 shadow-lg shadow-sky-400/40 overflow-hidden">
+                <img
+                  src="/logo.png"
+                  alt="Nubexs Logo"
+                  className="h-7 w-7 object-contain"
+                />
               </div>
               <div>
                 <div className="flex items-center gap-1 text-sm font-semibold tracking-wide text-slate-100">
