@@ -128,7 +128,53 @@ export default function TermsAndConditions() {
           <h2 className="text-2xl font-semibold text-white">15. Governing Law</h2>
           <p>These Terms are governed by the laws of the State of Wyoming, USA.</p>
 
-          <h2 className="text-2xl font-semibold text-white">16. Contact Information</h2>
+          <h2 className="text-2xl font-semibold text-white mt-6">
+            17. Nubexs SOS Mobile Application
+          </h2>
+
+          <h3 className="text-xl font-semibold text-white">
+            A. Nature of the Application
+          </h3>
+          <p>
+            The Nubexs SOS mobile application is provided strictly as a supportive safety tool.
+            It does not guarantee emergency response, rescue, or assistance of any kind.
+          </p>
+
+          <h3 className="text-xl font-semibold text-white">
+            B. No Emergency Service Replacement
+          </h3>
+          <p>
+            The SOS application is not a substitute for official emergency services such as police,
+            ambulance, fire departments, or government emergency numbers.
+          </p>
+
+          <h3 className="text-xl font-semibold text-white">
+            C. Message Delivery Disclaimer
+          </h3>
+          <p>
+            Message delivery depends entirely on mobile network availability, device functionality,
+            SMS service reliability, and recipient accessibility. Nubexs USA LLC is not responsible
+            for delayed, failed, or undelivered messages.
+          </p>
+
+          <h3 className="text-xl font-semibold text-white">
+            D. User Responsibility
+          </h3>
+          <p>
+            Users are solely responsible for selecting the correct emergency contact number,
+            ensuring it is valid, reachable, and used responsibly.
+          </p>
+
+          <h3 className="text-xl font-semibold text-white">
+            E. Limitation of Liability
+          </h3>
+          <p>
+            Nubexs USA LLC shall have zero liability for any loss, damage, injury, or consequence
+            resulting from the use or inability to use the SOS application. Use of the application
+            is entirely at the user’s own risk.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-white"> Contact Information</h2>
           <p>
             Nubexs USA LLC  
             <br />30 N Gould St Ste R  

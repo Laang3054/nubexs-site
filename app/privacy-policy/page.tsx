@@ -97,8 +97,33 @@ export default function PrivacyPolicy() {
             You may request correction, access, or deletion of your data at any time by
             contacting developer@nubexs.com.
           </p>
+          <h2 className="text-2xl font-semibold text-white mt-6">9. Nubexs SOS Mobile Application</h2>
+          <p>
+            The Nubexs SOS mobile application is a safety-focused utility designed to help users quickly compose an emergency SMS to a single emergency contact selected by the user.
+          </p>
+          <h3 className="text-xl font-semibold text-white">A. Data Collection</h3>
+          <p>
+            The SOS application does not require user accounts, does not use backend servers, and does not collect, transmit, or store personal data on Nubexs USA LLC servers.
+          </p>
+          <h3 className="text-xl font-semibold text-white">B. Local Storage</h3>
+          <p>
+            Emergency contact numbers saved within the SOS application are stored locally on the user’s device only using secure local storage. Nubexs USA LLC has no access to these numbers.
+          </p>
+          <h3 className="text-xl font-semibold text-white">C. Location Usage</h3>
+          <p>
+            Location access is requested only at the time of an SOS action. When granted, the application retrieves the user’s current or last known location solely to include it inside the SMS message.
+            Location data is not stored, not tracked, and not shared with Nubexs or any third party.
+          </p>
+          <h3 className="text-xl font-semibold text-white">D. SMS Functionality</h3>
+          <p>
+            The SOS application opens the device’s default SMS application with a pre-filled message for user confirmation. Messages are not sent automatically, and Nubexs does not monitor, log, or verify message delivery.
+          </p>
+          <h3 className="text-xl font-semibold text-white">E. No Tracking or Analytics</h3>
+          <p>
+            The SOS application does not use analytics tools, does not perform background tracking, and does not sell, rent, or share user data.
+          </p>
 
-          <h2 className="text-2xl font-semibold text-white mt-6">9. Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-white mt-6"> Contact Us</h2>
           <p>
             Nubexs USA LLC  
             <br />30 N Gould St Ste R  
